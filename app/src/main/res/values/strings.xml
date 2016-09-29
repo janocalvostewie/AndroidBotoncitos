@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Botoncitos</string>
+    <string name="azul">AZUL</string>
+    <string name="verde">VERDE</string>
+    <string name="rojo">ROJO</string>
+    <string name="amarillo">AMARILLO</string>
+</resources>

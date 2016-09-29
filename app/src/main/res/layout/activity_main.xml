@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jano.botoncitos.MainActivity">
+
+    <Button
+        android:hint="@string/azul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:id="@+id/btnazul"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/boton_plano"
+        android:layout_below="@+id/btnverde"
+        android:onClick="cambiaFondo"
+        android:layout_alignStart="@+id/btnverde"
+        android:drawableLeft="@mipmap/ic_paleta" />
+
+    <Button
+        android:hint="@string/rojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnrojo"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/boton_plano"
+        android:layout_alignBaseline="@+id/btnazul"
+        android:layout_alignBottom="@+id/btnazul"
+        android:onClick="cambiaFondo"
+        android:layout_alignStart="@+id/btnamarillo"
+        android:drawableLeft="@mipmap/ic_paleta"
+        android:layout_alignEnd="@+id/btnamarillo" />
+
+    <Button
+        android:hint="@string/amarillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnamarillo"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/boton_plano"
+        android:onClick="cambiaFondo"
+        android:layout_toEndOf="@+id/btnverde"
+        android:layout_marginStart="58dp"
+        android:drawableLeft="@mipmap/ic_paleta"
+        android:layout_alignTop="@+id/btnverde" />
+
+    <Button
+        android:hint="@string/verde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/btnverde"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/boton_plano"
+        android:onClick="cambiaFondo"
+        android:drawableLeft="@mipmap/ic_paleta"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
